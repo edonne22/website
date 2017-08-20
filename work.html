@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-state=1">
+<title>Eliza Donne | interactive developer</title>
+<link rel="stylesheet" href="css/style.css" />
+
+<style type="text/css">
+@font-face{
+	font-family: 'LetterGothic-Std';
+	src: url("fonts/LetterGothicStd.otf");
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+<script src="js/jquery-1.8.1.min.js"></script> 
+
+<script type="text/javascript">
+//scroll to in-page link
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash ;
+      //add smooth page scroll
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+
+</head>
+
+<!---BORDERS-->
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+
+<body style="overflow-x:hidden; overflow-y:scroll;">
+<div id="background_image"></div>
+
+<div id="header" style="display:block;">	
+	<a href="index.html"><div id="header_title" style="display:block;"><p id="head1">ELIZA M. DONNE</p></a> 
+	<a href="index.html"><p id="head2">interactive developer</p></div></a>
+</div>
+<!--end header-->
+
+<div id="section_1" style="padding-top:100px; margin-top:-100px;">
+	<div id="menu" style="height:50px; width:650px; margin-top:150px;">
+		<a href="#section_2"><p class="page_text menu_button" style="background-color:rgba(25,25,77,.8); color:white;">HTML</p></a>
+		<a href="#section_3"><p class="page_text menu_button" style="background-color:rgba(25,25,77,.8); color:white;">3D</p></a>
+		<a href="#section_4"><p class="page_text menu_button" style="background-color:rgba(25,25,77,.8); color:white;">Animation</p></a>
+		<a href="#section_5"><p class="page_text menu_button" style="background-color:rgba(25,25,77,.8); color:white;">Illustration</p></a>
+	</div>
+	
+	<div id="textSection_about" style="width:750px; margin:auto; margin-top:20px; padding-right:150px;">
+		<p class="topicTitle" id="title2">WORK</p>
+		<p class="aboutDescription">
+			Eliza is currently employed at <a id="edLink" target="_blank" href="http://educationalresource.com/index.html">Educational Resource Systems Inc.</a>, where she programs custom medical educational tools that fit client needs.
+			</br></br>
+			Awards: </br>
+			<li style="font-size:1.05em;">2015: At ERS she programmed an augmented reality app that has earned recognition in its field for innovative life science training. The app was a Finalist in Innovation for the Life Science Trainers & Educators Network Excellence Awards.  <a id="edLink" target="_blank" href="http://educationalresource.com/img/news/2015-LTEN_Innovation_Award.pdf">View Details</a></li>
+			</br>
+			<li style="font-size:1.05em;">2013: "WHealth", a health data game she worked on with a team at The College of New Jersey, won first prize in the Robert Wood Johnson Games for Health challenge. As part of a team of four, Eliza contributed to the 3D modeling, animation, and graphic design of the game.  <a id="edLink" target="_blank" href="http://whrgroup.org/whealth.pdf">View Details</a></li>   
+		</p>
+	</div>
+	<a href="#section_2"><div id="down1" class="downButton" style="margin-top:10px;"></div></a>
+</div>
+
+<div id="section_2" style="padding-top:100px; margin-top:-100px;">
+
+	<div id="textSection_skills">
+	<p class="topicTitle" id="title2">HTML Games</p>
+	<p style="margin-top:-20px; margin-left:10px;">Click the images to play</p>	
+	<div id="blocks" style="position:relative; width:980px; padding-left:40px; margin-left:auto; margin-right:auto;">	
+		<a target="_blank" href="http://elizamdonne.com/games/all_dressed_up/index.html"><div style="cursor:pointer;" class="block"><img src="images/dress_up.png"/></div></a>
+		<a target="_blank" href="http://elizamdonne.com/games/sat_cat/index.html"><div style="cursor:pointer;" class="block"><img src="images/vocab_game.png"/></div></a>
+	</div>
+	</div>
+	
+	<a href="#section_3"><div id="down1" class="downButton" style="margin-top:-80px;"></div></a>
+</div>
+
+<div id="section_3" style="padding-top:20px; margin-top:-20px;">
+
+	<div id="textSection_skills">
+	<p class="topicTitle" id="title2">3D Modeling</p>	
+	<div id="blocks" style="position:relative; width:800px; padding-left:40px; margin-left:auto; margin-right:auto;">	
+		<div class="block"><img src="images/3d_images/theater1.jpg"/></div>
+		<div class="block"><img src="images/3d_images/exterior18.jpg"/></div>
+		<div class="block"><img src="images/3d_images/escapeRoomSample.jpg"/></div>
+		<div class="block"><img src="images/3d_images/modernroom4.png"/></div>
+	</div>
+	</div>
+	
+	<a href="#section_4"><div id="down1" class="downButton" style="margin-top:150px;"></div></a>
+</div>
+
+<div id="section_4" style="padding-top:10px; margin-top:-10px;">
+
+	<div id="textSection_skills">
+	<p class="topicTitle" id="title2">Animation</p>	
+		<div id="vidHolder" style="width:510px; height:850px; margin:auto;">
+		<video width="500" height="380" controls style="margin-bottom:20px;">
+			<source src="video/nightfall.mp4" type="video/mp4">
+		</video>
+
+		<video width="500" height="380" controls>
+			<source src="video/nursery.mp4" type="video/mp4">
+		</video>
+		</div>
+	</div>
+	
+	<a href="#section_5"><div id="down1" class="downButton" style="margin-top:430px;"></div></a>
+</div>
+
+<div id="section_5">
+
+	<div id="textSection_skills">
+	<p class="topicTitle" id="title2">Illustration</p>	
+		<div id="blocks" style="position:relative; width:910px; height:680px; padding-left:20px; margin-left:auto; margin-right:auto;">	
+			<div class="block2"><img src="images/illustration/barbra.png"/></div>
+			<div class="block3"><img src="images/illustration/sherlockfin.jpg"/></div>
+			<div class="block2"><img src="images/illustration/mr_carrot.png"/></div>
+			<div class="block" style="margin-left:40px;"><img src="images/illustration/buddha.png"/></div>
+			<div class="block"><img src="images/illustration/illustration.jpg"/></div>
+		</div>
+	</div>
+	
+	<a href="#section_1"><div id="upButton" style="margin-top:210px;"></div></a>
+</div>
+
+</body>
+
+</html>

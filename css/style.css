@@ -1,0 +1,532 @@
+/*--BORDERS--*/
+#top, #bottom, #left, #right {
+	background: #00134d;
+	position: fixed;
+	z-index:5;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 25px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 25px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+/*end border styling*/
+
+h1{
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.9em;
+	color: white;
+}
+body{
+	
+	width:auto;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+	padding:0;
+	margin:0 auto;
+	top:0; left:0;
+}
+#background_image{
+	position:fixed;
+	top:0; left:0; padding:0; margin:0;
+	background:linear-gradient(rgba(90,90,285,0), rgba(90,90,285,.3)), url('../images/spaceDimmed_sized.jpg');
+	width:100%; height:100%;
+	background-repeat:repeat-y;
+	background-size:cover;
+	z-index:-1;
+}
+.block{
+float:left;
+position:relative; 
+margin:10px; 
+width:300px; 
+height:235px; 
+overflow:hidden; !important
+}
+.block img{
+width:300px;
+height:235px;
+
+-webkit-transition: all .2s ease; 
+-moz-transition: all .2s ease; 
+-ms-transition: all .2s ease; 
+transition: all .2s ease;
+}
+.block img:hover{
+width:330px;
+height:260px;
+}
+.block2{
+float:left;
+position:relative; 
+margin:10px; 
+width:235px; 
+height:300px; 
+overflow:hidden; !important
+}
+.block2 img{
+width:235px;
+height:300px;
+
+-webkit-transition: all .2s ease; 
+-moz-transition: all .2s ease; 
+-ms-transition: all .2s ease; 
+transition: all .2s ease;
+}
+.block2 img:hover{
+width:260px;
+height:330px;
+}
+.block3{
+float:left;
+position:relative; 
+margin:10px; 
+width:169px; 
+height:300px; 
+overflow:hidden; !important
+}
+.block3 img{
+width:169px;
+height:300px;
+
+-webkit-transition: all .2s ease; 
+-moz-transition: all .2s ease; 
+-ms-transition: all .2s ease; 
+transition: all .2s ease;
+}
+.block3 img:hover{
+width:180px;
+height:330px;
+}
+
+#aboutBlock{
+	width:700px; 
+	height:430px; 
+	margin:auto; 
+	padding-top:100px; 
+}
+.aboutDescription{
+	font-family:'Quicksand',sans-serif; 
+	font-size:1.08em;
+}
+#abouticon{
+	display:block; 
+	background:url('../images/pic5.png'); 
+	background-size:230px 210px; 
+	background-repeat:no-repeat; 
+	position:absolute; 
+	left:400px; 
+	top:30px; 
+	height:246px; 
+	width:300px;
+	display:block; 
+	position:relative;  
+	float:left; 
+	margin-left:-450px; 
+	margin-top:80px;
+}
+#astro_stage{
+	display:block;
+	position:relative;  
+	margin-left:auto; 
+	margin-right:auto;
+	margin-top:-200px;
+	width:14%;
+	float:right;
+	padding-right:25%;
+}
+#astronaut{
+	display:block;
+	margin-top:-300px;
+	animation-duration: 3s;
+	animation-name: floatAstro;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-delay:0.1s;
+}
+
+@keyframes floatAstro {
+
+	from {
+		transform: translate(0px, 10px);
+		/*transform: rotate(1deg);*/
+	}
+	
+	to {
+		transform: translate(0px, -10px);
+		/*transform:rotate(-1deg);*/
+	}
+}
+.downButton{
+	background:url('../images/thin-arrow.png') no-repeat;
+	background-size:80px 38px;
+	width:80px; 
+	height:38px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	cursor:pointer;
+	opacity:.3;
+}
+.downButton:hover{
+	opacity:.7;
+}
+#down1{
+	margin-top:170px;
+	padding-right:15px;
+}
+#down2{
+	margin-top:40px;
+}
+#edLink{
+	color:white;
+}
+#header_title{
+	display:none;
+	opacity:1;
+	z-index:100;
+	position:fixed;
+	left:0;
+	top:27px;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:80px;
+	background:black;
+	background:linear-gradient(to right,rgba(0,0,80,.5), rgba(0,0,0,.3));
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+}
+#head1{
+	font-family:'Dosis',sans-serif;
+	/*text-shadow: 2px 1px rgba(65, 65, 255, .7);*/
+	font-size:1.7em;
+	color:rgb(180,190,250);
+	position:absolute;
+	left:48px;
+	top:-20px;
+}
+#head2{
+	font-size:1.4em;
+	color:rgb(80,50,255);
+	position:absolute;
+	left:45px;
+	top:20px;
+}
+#icons{
+	font-family:'Quicksand',sans-serif; 
+	position:relative; 
+	width:640px; 
+	padding-left:10px; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+.icon_pic{
+	background:url('../images/skills_icons2.png'); 
+	background-size:338px 120px; 
+	width:113px; 
+	height:120px;
+	float:left;
+}
+#icon_3{	 
+	background-position:0 0; 
+}
+#icon_2{
+	background-position:114px 0; 
+}
+#icon_1{
+	background-position:226px 0; 
+}
+#icon_text{
+	width:480px; 
+	padding:20px; 
+	padding-left:148px; 
+	float:left; 
+	margin-top:-125px;
+}
+.page_text{
+	font-size:1.5em;
+	color:white;
+}
+#menu{
+	width:312px; 
+	margin:auto;
+}
+#menu a{
+	text-decoration:none;
+}
+.menu_button{
+	z-index:3;  
+	width:120px;
+	height:30px;
+	padding:10px; 
+	text-align:center;
+	background-color:rgba(25,25,77,.8);
+	border-radius:5px;
+	float:left;
+	margin:5px;
+	color:rgb(150,150,150);
+}
+.menu_button:hover{
+ /*color:#ffe762;*/
+ cursor:pointer;
+ background-color:black;
+ color:white;
+ /*color:#ffe762;*/
+}
+#name_title{
+	position:relative; 
+	margin-left:auto; 
+	margin-right:auto; 
+	top:5px; 
+	width:420px; 
+	font-size:48px; 
+	text-shadow: 3px 1px rgba(65, 65, 255, .5); 
+	color:rgb(200,200,255); 
+	font-family:'Orbitron',sans-serif;
+}
+#name_descriptor{
+	position:relative; 
+	color:rgb(80,50,255); 
+	text-shadow: 2px 2px black; 
+	margin-left:auto; 
+	margin-right:auto; 
+	top:-35px; 
+	width:295px; 
+	font-size:35px;
+}
+#portfolio{
+	background-color:rgba(38,38,115,.8);
+}
+#portfolio:hover{
+	background-color:black;
+}
+#portfolio2 {
+	display:block;
+	background-color:rgba(38,38,115,1);
+}
+#portfolio2 a{
+	text-decoration:none;
+	color:white;
+	font-size:26px;
+}
+#section1{
+	width:100%; 
+	left:0; 
+	top:0; 
+	height:768px; 
+	float:left; 
+	background-color:rgba(70,30,0,0);
+}
+#section2{
+	width:100%; 
+	float:left; 
+	height:768px; 
+	background-color: linear-gradient(rgba(0,0,0,0), rgba(0,0,150,.1));
+}
+#section3{
+	width:100%; 
+	height:768px; 
+	margin-top:115px; 
+	float:left;
+}
+#skillsBlock{
+	width:700px; 
+	height:450px; 
+	margin:auto; 
+	margin-top:170px;
+}
+#titleGroup{
+	margin:auto;
+	margin-top:190px;
+	padding-right:50px;
+}
+.topicTitle{
+	font-size:1.5em;
+}
+#title1{
+	font-size:1.8em;
+	margin-left:140px;
+}
+#text ul{
+	float:left;
+	width:600px;
+}
+#textSection_about{
+	width:500px; 
+	text-shadow: 2px 1px rgba(0, 0, 0, .3); 
+	margin:auto; 
+	margin-top:60px; 
+	padding-left:200px; 
+	font-size:1.4em;
+}
+#textSection_skills{
+	text-shadow: 2px 1px rgba(0, 0, 0, .3); 
+	font-size:21px;
+	width:700px; 
+	height:450px; 
+	margin:auto; 
+	margin-top:140px;
+}
+#upButton{
+	position:relative;
+	background:url('../images/thin-arrow-flipped.png') no-repeat;
+	background-size:80px 38px;
+	width:80px; 
+	height:38px;
+	margin-left:auto;
+	margin-right:auto;
+	cursor:pointer;
+	opacity:.5;
+	margin-top:100px;
+}
+#upButton:hover{
+	opacity:.7;
+}
+
+/*conditions for alternate sizing*/
+
+@media 
+only screen and (max-width: 1024px)
+{
+	#abouticon{
+		background-size:196px 179px;
+		width:196px;
+		height:179px;
+		left:500px;
+	}
+	.aboutDescription{
+		font-size:20px;
+	}
+	#astro_stage{
+		margin-top:-100px;
+		padding-right:18%;
+	}
+	#textSection_about{
+		width:360px;
+	}
+	#upButton{
+		margin-top:80px;
+	}
+}
+@media
+only screen and (max-width:650px)
+{
+	#aboutBlock{
+		width:250px;
+	}
+	#abouticon{
+		margin-top:-30px;
+		background-size:127px 116px;
+		width:127px;
+		height:116px;
+		left:570px;
+	}
+	#astro_stage{
+		margin-top:-140px;
+		padding-right:14%;
+	}
+	#down2{
+		margin-top:255px;
+	}
+	#icons{
+		width:300px;
+	}
+	.icon_pic{
+		background-size:220px 78px; 
+		width:73px; 
+		height:78px;
+	}
+	#icon_2{
+		background-position: 73px 0;
+	}
+	#icon_1{
+		background-position: 146px 0;
+	}
+	#icon_text{
+		width:190px;
+		padding-left:100px;
+		margin-bottom:35px;
+	}
+	#name_descriptor{
+		font-size:28px;
+		width:230px;
+	}
+	#name_title{
+		width:295px;
+		font-size:35px;
+	}
+	#portfolio2{
+		display:none;
+	}
+	.topicTitle{
+		margin-bottom:50px;
+	}
+	#title1{
+		margin-left:95px;
+	}
+	#title2{
+		margin-left:0px;
+	}
+	#titleGroup{
+		padding-right:0px;
+	}
+	#textSection_skills{
+		width:320px;
+	}
+	#textSection_about{
+		width:250px;
+		padding-left:0px;
+		font-size:1.2em;
+	}
+	#upButton{
+		margin-top:125px;
+	}
+}
+
+@media
+/* Fairly small screens including iphones */
+only screen and (max-width: 570px)
+{
+	#background_image{
+	position:fixed;
+	top:0; left:0; padding:0; margin:0;
+	background:linear-gradient(rgba(90,90,285,0), rgba(90,90,285,.3)), url('../images/spaceDimmed_phone.jpg');
+	width:100%; height:100%;
+	background-repeat:repeat-y;
+	background-size:cover;
+	z-index:-1;
+	}
+	#top, #bottom, #left, #right { display: none; }
+	.topicTitle{
+		margin-bottom:50px;
+	}
+	#titleGroup{
+		margin-top:80px;
+	}
+	#textSection_skills{
+		width:320px;
+	}
+	#astronaut{
+		display:none;
+	}
+	#menu{
+		width:300px;
+	}
+	#name_title{
+		width:280px;
+		font-size:32px;
+	}
+	#header_title{
+		opacity:0;
+	}
+}
+
+

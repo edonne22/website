@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-state=1">
+<title>Eliza Donne | interactive developer</title>
+<link rel="stylesheet" href="css/style.css" />
+
+<style type="text/css">
+@font-face{
+	font-family: 'LetterGothic-Std';
+	src: url("fonts/LetterGothicStd.otf");
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+<script src="js/jquery-1.8.1.min.js"></script> 
+
+<script type="text/javascript">
+//scroll to in-page link
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      //add smooth page scroll
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+
+/*add/remove additional header*/
+function init() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            headerOn = 300,
+            header = document.querySelector("header");
+        if (distanceY > headerOn) {
+            $("#header_title").css("display","block");
+        } else {
+            $("#header_title").css("display","none");
+        }
+    });
+}
+window.onload = init();
+</script>
+
+</head>
+
+<!---BORDERS-->
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+
+<body style="overflow-x:hidden; overflow-y:scroll;">
+<div id="background_image"></div>
+
+<div id="header">	
+	<div id="header_title"><p id="head1">ELIZA M. DONNE</p> <p id="head2">interactive developer</p></div>
+</div>
+<!--end header-->
+
+<div id="section1">
+
+	<div id="titleGroup">
+			<p id="name_title"><strong>Eliza M.&ensp;Donne</strong></p>
+			<p id="name_descriptor">interactive developer</p>
+	
+			<div id="menu">
+				<a href="#section2"><p id="skills" class="page_text menu_button">What I Do</p></a>
+				<a href="#section3"><p id="about" class="page_text menu_button">Who I Am</p></a>
+				<a href="work.html"><p style="margin-left:80px;" id="portfolio" class="page_text menu_button">Portfolio</p></a>
+			</div>
+			
+			<a href="#section2"><div id="down1" class="downButton"></div></a>
+	</div>
+
+	
+
+	<div id="astronaut"><img src="images/astroRender1.png" id="astro_stage"/></div>
+
+</div>
+
+<div id="section2" class="subject_skills">
+	
+	<div id="textSection_skills">
+		
+		<p class="topicTitle" id="title1">WHAT I DO</p>
+		
+		<div id="icons">
+		
+		<div class="icon_pic" id="icon_3"></div>
+		<div id="icon_text">
+			<li>Build interactive content for web and mobile</li>
+			<li>Augmented Reality app creation</li>
+			<li>3D Animation and Modeling</li>
+		</div>
+		<div class="icon_pic" id="icon_2"></div>
+		<div id="icon_text" style="float:left; margin-top:-140px;">
+			<p><li> Strong ability to quickly learn and adapt to various programs, tasks, and workflows</li></p>
+		</div>
+		<div class="icon_pic" id="icon_1"></div>
+		<div id="icon_text" style="margin-top:-150px; float:left;">
+			<p><li>Tools: Unity3D, Xcode, After Effects, Photoshop, Illustrator, Maya, Lightwave, Blender, Final Cut, Logic, Android Studio</li></p>
+		</div>
+		
+		</div>
+
+			
+	</div>
+	
+	<a href="#section3"><div id="down2" class="downButton"></div></a>
+</div>
+
+<div id="section3" class="subject_about">
+	
+	<div id="aboutBlock">
+	
+	<div id="abouticon"></div>
+	
+	<div id="textSection_about">
+		<p class="topicTitle" id="title2">WHO I AM</p>
+		<p class="aboutDescription">
+			Hi, I'm Eliza. I'm an interactive developer with artistic leanings. I specialize in building innovative educational programs for digital platforms.
+			These days I mostly use C# with Unity or HTML/CSS/Javascript to develop content for web and mobile devices. 
+			My love of creating cool things is what lead me to programming, but it also extends to music, writing and art.
+			</br>
+			<a href="work.html"><p style="margin-left:0px; padding-bottom:20px; padding-top:0px;" id="portfolio2" class="page_text menu_button">Portfolio</p></a> 
+		</p>
+	</div>
+	</div>
+	
+	<a href="#section1"><div id="upButton"></div></a>
+</div>
+
+</body>
+
+</html>
